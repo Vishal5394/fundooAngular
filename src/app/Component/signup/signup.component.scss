@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Page {
+    width: 50vw;
+    height: 70vh;
+    border: 1px solid rgb(187, 186, 186);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 425px;
+    top: 100px;
+}
+
+.Page-child {
+    width: 50%;
+    height: 100%;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.user-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    position: relative;
+    top:4%;
+    // border: 1px solid red;
+}
+
+.User-para{
+    // border: 1px solid red;
+    width:100%;
+    padding: 0px 0px 0px 25px;
+    display: flex;
+    text-align: left;
+}
+
+.header-Head {
+    width: 100%;
+    height: 14%;
+    //  border: 1px solid red; 
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    line-height: 0.5px;
+}
+
+.page-text {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.input-name {
+    // border: 1px solid red; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.space {
+    // border: 1px solid red; 
+    height: 30px;
+}
+
+.input-password {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.button {
+    width: 90%;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left:5%;
+    top:-20px;
+}
+.pass-text{
+    // border: 1px solid red;
+    width:90%;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.Page-Child2{
+    // border: 1px solid red;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.page-img{
+    // border: 1px solid red;
+    height:50%;
+}
+
+.btn-user{
+    width:85%;
+    // border: 1px solid red;
+    text-align: left;
+    display: flex;
+    align-items: start;
+}
