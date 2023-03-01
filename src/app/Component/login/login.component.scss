@@ -17,6 +17,7 @@
     left: 35%;
     top: 100px;
     line-height: 0.5px;
+    border-radius: 10px;
   }
   .Head {
     display: flex;
@@ -41,13 +42,24 @@
   .textfield {
     // border: 1px solid red; 
     width:80%;
-    height:40%;
+    height:44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
    
   }
   
   .main-p {
-    font-size: 14px;
+    width:80%;
+    height: 10%;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: start;
+    font-size: 14px;
     color: rgb(129, 128, 128);
     // border: 1px solid red;
   }
@@ -60,9 +72,16 @@
     align-items: flex-start;
     // border: 1px solid yellow;
   }
+
+  mat-form-field{
+    // border: 1px solid red;
+    width: 360px;
+    height:60px;
+    font-size: 15px;
+  }
   
   .btn-sugg{
-    // border: 1px solid red;
+  //  border: 1px solid red;
    float: left;
   }
   
