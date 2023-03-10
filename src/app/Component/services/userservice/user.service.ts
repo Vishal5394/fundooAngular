@@ -6,7 +6,6 @@ import { HttpService } from '../httpservice/http.service';
   providedIn: 'root'
 })
 export class UserService {
-
   constructor(private http:HttpService) { }
 
   register(data:{}){
@@ -25,15 +24,15 @@ export class UserService {
       })
     }
    return this.http.postservice('http://fundoonotes.incubation.bridgelabz.com/api/user/login',data,false,header)
+   
   }
 
-  reset(data:any){
+  forgotPassword(data:any){
     let header={
       headers: new HttpHeaders({
         'Content-Type':'application/json'
       })
     }
    return this.http.postservice('http://fundoonotes.incubation.bridgelabz.com/api/user/reset',data,false,header)
-
   }
 }

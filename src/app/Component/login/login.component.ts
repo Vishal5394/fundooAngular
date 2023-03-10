@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
    submitted = false;
  
 
-   constructor(private formBuilder: FormBuilder, private user:UserService, private _router:Router) { }
+   constructor(private formBuilder: FormBuilder, private user : UserService, private _router : Router) { }
 
    ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -27,7 +27,6 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.valid) {
       console.log('valid data', this.loginForm.value)
       console.log("Login Successfully")
-      this._router.navigate(['dashboard'])
     
       let loginform = {
         email: this.loginForm.value.email,
@@ -35,7 +34,10 @@ export class LoginComponent implements OnInit {
         service: "advanced"
       }
       this.user.login(loginform).subscribe((res:any)=>{
-        console.log(res)
+        debugger
+        console.log('res',res)
+        // localStorage.setItem('token',res.token)
+        this._router.navigate(['dashboard/notes'])
         
       }, (error: any) =>{
         console.log(error);

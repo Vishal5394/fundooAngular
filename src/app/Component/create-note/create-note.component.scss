@@ -1,22 +1,27 @@
 .note-main{
     // border: 1px solid red;
     width:40vw;
-    height: 20vh;
+    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
+    align-items: start;
+    // align-content: center;
     position: relative;
-    left: 500px;
-    top: 100px;
+    left: 350px;
+    top: 50px;
+    
 }
 mat-card{
     width:100%;
     height: 100%; 
     display: flex;
+    flex-wrap:wrap;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    align-content: center;
+    // border: 1px solid red;
+    border-radius: 10px;
     
 }
 .mat-card-header{
@@ -26,21 +31,22 @@ mat-card{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    align-content:space-between;
 }
 .note-Main-one{
     width:100%;
-    height: 100%; 
+    height: auto; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
+    align-content:space-between;
 }
 .note-header{
     width: 95%;
+    height:50px;
+    font-size:18px;
     // border: 1px solid red;
-    position: relative;
-    bottom: 20px;
 }
 .note-header-input{
     width: 200%;
@@ -66,13 +72,12 @@ mat-card{
 }
 .note-para{
     width: 95%;
-    position: relative;
-    bottom: 20px;
+    height:40px;
     // border: 1px solid red;
 }
 .card-icons{
     width: 90%;
-    height: 25px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

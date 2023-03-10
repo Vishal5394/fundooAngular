@@ -25,6 +25,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import {MatCardModule} from '@angular/material/card';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatCheckboxModule, ReactiveFormsModule, HttpClientModule,
-    MatSidenavModule,MatListModule,MatToolbarModule,MatIconModule,MatCardModule
+    MatSidenavModule,MatListModule,MatToolbarModule,MatIconModule,MatCardModule, FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
